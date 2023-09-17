@@ -58,7 +58,7 @@ function FavoriteList() {
 
   return (
     <div className={styles.container}>
-      {likedCars.length > 0 && (
+      {likedCars.length > 0 ? (
         <ul className={styles.container}>
           {likedCars.map(item => (
             <li key={item.id} className={styles.container__item}>
@@ -123,6 +123,8 @@ function FavoriteList() {
             </li>
           ))}
         </ul>
+      ) : (
+        <h2 className={styles.noResults}>No items in favorite list</h2>
       )}
       <Modal
         open={openModal}

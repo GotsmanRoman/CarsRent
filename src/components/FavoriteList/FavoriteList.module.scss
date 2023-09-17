@@ -6,6 +6,7 @@
   column-gap: 29px;
   padding: 0;
   margin: 0 auto;
+  min-height: 500px;
 }
 .container__item {
   display: flex;
@@ -111,4 +112,8 @@
   @media screen and (min-width: 1440px) {
     font-size: 24px;
   }
+}
+.noResults {
+  width: 100%;
+  text-align: center;
 }
