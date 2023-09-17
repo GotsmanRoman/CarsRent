@@ -42,14 +42,6 @@ export const carsSlice = createSlice({
           }
 
           if (filterByPrice && +car.rentalPrice.slice(1) > +filterByPrice) {
-            console.log(
-              car.make,
-              'price',
-              car.rentalPrice.slice(1),
-              'and its more then filter price:',
-              filterByPrice,
-              car.rentalPrice.slice(1) >= filterByPrice
-            );
             passFilter = false;
           }
 
@@ -64,7 +56,6 @@ export const carsSlice = createSlice({
           return passFilter;
         })
         .slice(0, 8);
-      console.log(totalItems);
     },
     clearFilters: state => {
       state.filter = {
