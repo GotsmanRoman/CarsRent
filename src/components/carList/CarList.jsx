@@ -51,7 +51,7 @@ function CarList() {
 
   return (
     <div className={styles.container}>
-      {filteredCars.length > 0 && (
+      {filteredCars.length > 0 ? (
         <ul className={styles.container}>
           {filteredCars.map(item => (
             <li key={item.id} className={styles.container__item}>
@@ -112,6 +112,8 @@ function CarList() {
             </li>
           ))}
         </ul>
+      ) : (
+        <h2 className={styles.noResults}>No items found</h2>
       )}
       <Modal
         open={openModal}

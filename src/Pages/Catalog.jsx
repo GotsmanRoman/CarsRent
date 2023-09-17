@@ -10,7 +10,7 @@ import Footer from '../components/Footer/Footer';
 import '../index';
 
 const Catalog = () => {
-  const { hasMore } = useSelector(state => state.cars);
+  const { hasMore, filteredCars } = useSelector(state => state.cars);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Catalog = () => {
       <section className="section">
         <CatalogFilter />
         <CarList />
-        {hasMore && (
+        {hasMore & (filteredCars.length > 0) && (
           <LoadMoreButton onClick={handleLoadMore}>Load More</LoadMoreButton>
         )}
       </section>
