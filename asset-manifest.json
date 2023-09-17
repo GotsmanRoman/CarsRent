@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/CarsRent/static/css/main.71d7c509.css",
-    "main.js": "/CarsRent/static/js/main.4a2a98be.js",
+    "main.js": "/CarsRent/static/js/main.eb36badb.js",
     "static/media/hero2.png": "/CarsRent/static/media/hero2.355a1e1cdac1b68ff65e.png",
     "static/media/logo2.png": "/CarsRent/static/media/logo2.8740aaeb2c0118bda59f.png",
     "static/media/nocar.jpg": "/CarsRent/static/media/nocar.9a3ecb413e743c27d998.jpg",
     "index.html": "/CarsRent/index.html",
     "static/media/x.svg": "/CarsRent/static/media/x.f3cbdd58dc25ca7cbb3d242106b56fb9.svg",
     "main.71d7c509.css.map": "/CarsRent/static/css/main.71d7c509.css.map",
-    "main.4a2a98be.js.map": "/CarsRent/static/js/main.4a2a98be.js.map"
+    "main.eb36badb.js.map": "/CarsRent/static/js/main.eb36badb.js.map"
   },
   "entrypoints": [
     "static/css/main.71d7c509.css",
-    "static/js/main.4a2a98be.js"
+    "static/js/main.eb36badb.js"
   ]
 }
