@@ -27,7 +27,6 @@ export const carsSlice = createSlice({
         filterByMileAgeTo,
       } = action.payload;
       state.filteredCars = [];
-      let totalItems = 0;
 
       state.filter = action.payload;
       state.filteredCars = state.cars
@@ -52,7 +51,6 @@ export const carsSlice = createSlice({
           if (filterByMileAgeTo && car.mileage > filterByMileAgeTo) {
             passFilter = false;
           }
-          totalItems++;
           return passFilter;
         })
         .slice(0, 8);
