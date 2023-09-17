@@ -1,113 +1,59 @@
-# React homework template
+Car Rental Application
 
-Этот проект был создан при помощи
-[Create React App](https://github.com/facebook/create-react-app). Для знакомства
-и настройки дополнительных возможностей
-[обратись к документации](https://facebook.github.io/create-react-app/docs/getting-started).
+This is a simple car rental application built with React. It allows users to
+browse a catalog of cars, add it to favorite list, open an modal window to see
+detailed information about car and rent it by clicking button. Additional to
+this, user can also use filtering options to find cars that match their
+preferences. Table of Contents
 
-## Создание репозитория по шаблону
+    Demo
+    Features
+    Getting Started
+    Technologies
+    Contributing
 
-Используй этот репозиторий организации GoIT как шаблон для создания репозитория
-своего проекта. Для этого нажми на кнопку `«Use this template»` и выбери опцию
-`«Create a new repository»`, как показано на изображении.
+Demo
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+You can access the live demo of the application
+https://Gotsmanroman.github.io/rentCars
 
-На следующем шаге откроется страница создания нового репозитория. Заполни поле
-его имени, убедись что репозиторий публичный, после чего нажми кнопку
-`«Create repository from template»`.
+Features
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+-Filter cars by model, rental price, and mileage. -View a catalog of cars which
+available for rent. -View detailed information about each car. -Add cars to your
+favorites. -Contact to company for rent a care via telephone or email.
 
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
+Getting Started
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+To get started with the project, follow these steps:
 
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
+    Clone this repository to your local machine:
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+git clone
 
-Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
-репозитория-шаблона. Далее работай с ним как с любым другим личным репозиторием,
-клонируй его себе на компьютер, пиши код, делай коммиты и отправляй их на
-GitHub.
+    Change directory to the project folder:
 
-## Подготовка к работе
+cd rent-cars-react
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Установи базовые зависимости проекта командой `npm install`.
-3. Запусти режим разработки, выполнив команду `npm start`.
-4. Перейди в браузере по адресу [http://localhost:3000](http://localhost:3000).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+    Install the project dependencies:
 
-## Деплой
+npm install
 
-Продакшн версия проекта будет автоматически проходить линтинг, собираться и
-деплоиться на GitHub Pages, в ветку `gh-pages`, каждый раз когда обновляется
-ветка `main`. Например, после прямого пуша или принятого пул-реквеста. Для этого
-необходимо в файле `package.json` отредактировать поле `homepage`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
+    Start the development server:
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
+npm run dev
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+    Open your web browser and move to http://localhost:3000/rentCars to access the application (*Port need to be adjusted)
 
-![GitHub Pages settings](./assets/repo-settings.png)
+Technologies
 
-### Статус деплоя
+    React
+    React Router
+    Redux Axios
+    Mui
+    MockAPI for API
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+Contributing
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
-
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` в файле `package.json`.
-
-### Маршрутизация
-
-Если приложение использует библиотеку `react-router-dom` для маршрутизации,
-необходимо дополнительно настроить компонент `<BrowserRouter>`, передав в пропе
-`basename` точное название твоего репозитория. Слеш в начале строки обязателен.
-
-```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
-```
-
-## Как это работает
-
-![How it works](./assets/how-it-works.png)
-
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+We welcome contributions from the community. If you find any issues or have
+suggestions for improvements, please open an issue or submit a pull request.

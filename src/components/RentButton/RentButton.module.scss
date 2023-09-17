@@ -1,0 +1,21 @@
+.rent__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 44px;
+  background-color: var(--main-button-color);
+  border-radius: 12px;
+  color: #ffffff;
+  border: none;
+  font-size: 24px;
+  text-decoration: none;
+
+  transition: background-color, color var(--transition-params);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--main-button-background);
+    color: var(--active-text-color);
+  }
+}

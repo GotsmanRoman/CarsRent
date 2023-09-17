@@ -1,0 +1,19 @@
+.favorite__btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: transparent;
+  border: transparent;
+  z-index: 1;
+  color: #ffffff;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.favoriteIcon:hover {
+  &:hover {
+    color: var(--main-button-color);
+  }
+}

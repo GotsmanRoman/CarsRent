@@ -1,0 +1,48 @@
+.searchForm {
+  width: 1070px;
+  height: 74px;
+  margin: 150px auto 50px auto;
+  display: flex;
+  column-gap: 18px;
+}
+
+.selectModel {
+  width: 224px;
+  height: 48px;
+  border-radius: 14px;
+  padding-left: 18px;
+  border: none;
+  background-color: var(--main-button-background);
+
+  font-size: 18px;
+  line-height: 20px;
+
+  cursor: pointer;
+
+  transition: var(--transition-button);
+
+  &:hover {
+    background-color: var(--transition-button-background);
+  }
+}
+.small {
+  width: 125px;
+}
+.medium {
+  width: 160px;
+}
+.submit {
+  width: 136px;
+  height: 48px;
+  background-color: var(--main-button-color);
+  border-radius: 12px;
+  color: #ffffff;
+  border: none;
+
+  transition: var(--transition-button);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--accent-button-color);
+  }
+}

@@ -1,0 +1,12 @@
+.NavLink {
+  color: #f0f0f0;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+  transition: text-decoration-color 250ms ease-in-out;
+}
+.NavLink:hover {
+  text-decoration-color: #f0f0f0;
+}
+.active {
+  color: blue;
+  font-size: 24px;
+}

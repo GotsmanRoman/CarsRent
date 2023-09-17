@@ -1,0 +1,30 @@
+:root {
+  --font: 'Manrope', sans-serif;
+
+  --main-bg-color: #0a0a11;
+  --secondary-bg-color: #161f37;
+
+  --select-bg-color: #434d67;
+
+  --main-text-color: #121417;
+  --secondary-text-color: rgba(18, 20, 23, 0.5);
+  --special-text-color: rgba(18, 20, 23, 0.1);
+  --active-text-color: #3470ff;
+
+  --main-button-color: #3470ff;
+  --accent-button-color: #0b44cd;
+  --disabled-button-color: #434d67;
+
+  --main-button-background: #f7f7fb;
+  --transition-button-background: #d4d4d8;
+
+  --main-modal-text-color: #363535;
+  --accent-modal-text-color: #3470ff;
+  --white-text-color: #ffffff;
+  --main-modal-background: #f7f7fb;
+  --secondary-modal-background: #f9f9f9;
+
+  --transition-button: background-color 400ms, border-color 400ms;
+  --transition-button-color: color 400ms, border-color 400ms;
+  --transition-params: 400ms ease-in-out;
+}
